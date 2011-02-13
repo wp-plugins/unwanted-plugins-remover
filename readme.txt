@@ -1,0 +1,36 @@
+=== Unwanted Plugins Remover ===
+Contributors: ocean90
+Tags: akismet, upgrade, hello dolly
+Requires at least: 3.0
+Tested up to: 3.1 RC4
+Stable tag: trunk
+
+You are annoyed about the problem, that on each WordPress core upgrade Akismet and Hello Dolly return? Then Unwanted Plugins Remover is for you!
+
+== Description ==
+
+With this plugin you can remove unwanted plugins on a WordPress core upgrade process. Unwanted plugins are for example (http://wordpress.org/extend/plugins/akismet/ "Akismet") or (http://wordpress.org/extend/plugins/hello-dolly/ "Hello Dolly". Both plugins are default values and will be removed on each core upgrade process. You can extend the list with a filter named `unwanted_plugins_list`.
+
+== Installation ==
+
+1. Upload `unwanted-plugins-remover` to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
+
+== Frequently Asked Questions ==
+
+= Removes the plugin also activated plugins? =
+
+No!
+
+= Is the plugin Multisite ready? =
+
+Yes and no. If all your sites/blogs don't want the plugin then yes, if not you will have a problem.
+
+== Screenshots ==
+
+1. How it will look.
+
+== Changelog ==
+
+= 0.1 =
+nitial Release
