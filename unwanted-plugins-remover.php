@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Unwanted Plugins Remover
- * Plugin URI: http://wordpress.org/extend/plugins/
+ * Plugin URI: http://wordpress.org/extend/plugins/unwanted-plugins-remover/
  * Text Domain: unwanted-plugins-remover
  * Domain Path: /lang
  * Description: With this plugin you can remove unwanted plugins on a WordPress core upgrade process. Unwanted plugins are for example <a href="http://wordpress.org/extend/plugins/akismet/">Akismet</a> or <a href="http://wordpress.org/extend/plugins/hello-dolly/">Hello Dolly</a>. Both plugins are default values and will be removed on each core upgrade process. You can extend the list with a filter named <code>unwanted_plugins_list</code>.
