@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Unwanted Plugins Remover
- * Plugin URI: http://wordpress.org/extend/plugins/unwanted-plugins-remover/
+ * Plugin URI: http://wordpress.org/extend/plugins/
  * Text Domain: unwanted-plugins-remover
  * Domain Path: /lang
  * Description: With this plugin you can remove unwanted plugins on a WordPress core upgrade process. Unwanted plugins are for example <a href="http://wordpress.org/extend/plugins/akismet/">Akismet</a> or <a href="http://wordpress.org/extend/plugins/hello-dolly/">Hello Dolly</a>. Both plugins are default values and will be removed on each core upgrade process. You can extend the list with a filter named <code>unwanted_plugins_list</code>.
  * Author: Dominik Schilling
  * Author URI: http://dominikschilling.de/
- * Version: 0.1
+ * Version: 0.1.1
  * License: GPLv2 or later
  *
  */
@@ -24,11 +24,15 @@ class Unwanted_Plugins_Remover {
 	 * __construct function.
 	 * Gogogogo.
 	 *
-	 * @uses apply_filters, add_filter, add_action, ABSPATH
+	 * @uses apply_filters, add_filter, add_action, ABSPATH, $pagenow
 	 * @access public
 	 * @return void
 	 */
 	public function __construct() {
+		global $pagenow;
+		if ( ! is_admin() && $pagenow != 'update-core.php' )
+			return false;
+
 		$this->maintenance_file = ABSPATH . '.maintenance';
 		$this->unwanted_plugins = apply_filters( 'unwanted_plugins_list', array( 'akismet/akismet.php', 'hello.php' ) );
 		$this->domain = 'unwanted-plugins-remover';
