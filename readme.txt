@@ -2,7 +2,7 @@
 Contributors: ocean90
 Tags: akismet, upgrade, hello dolly
 Requires at least: 3.0
-Tested up to: 3.1 RC4
+Tested up to: 3.1
 Stable tag: 0.1.1
 
 You are annoyed about the problem, that on each WordPress core upgrade Akismet and Hello Dolly return? Then Unwanted Plugins Remover is for you!
