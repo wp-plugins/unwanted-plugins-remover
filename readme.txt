@@ -2,8 +2,8 @@
 Contributors: ocean90
 Tags: akismet, upgrade, hello dolly
 Requires at least: 3.0
-Tested up to: 3.1 RC4
-Stable tag: 0.1
+Tested up to: 3.1
+Stable tag: 0.1.1
 
 You are annoyed about the problem, that on each WordPress core upgrade Akismet and Hello Dolly return? Then Unwanted Plugins Remover is for you!
 
@@ -31,6 +31,9 @@ Yes and no. If all your sites/blogs don't want the plugin then yes, if not you w
 1. How it will look.
 
 == Changelog ==
+
+= 0.1.1 =
+Run plugin only on upgrade process. Props [stalkerX](http://profiles.wordpress.org/users/stalkerX/).
 
 = 0.1 =
 Initial Release
