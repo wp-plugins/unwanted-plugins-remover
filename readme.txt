@@ -5,7 +5,7 @@ Requires at least: 3.0
 Tested up to: 3.1
 Stable tag: 0.1.1
 
-For WordPress versions lower then 3.2:
+For WordPress versions lower than 3.2:
 You are annoyed about the problem, that on each WordPress core upgrade Akismet and Hello Dolly return? Then Unwanted Plugins Remover is for you!
 
 == Description ==
